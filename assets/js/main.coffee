@@ -1,9 +1,12 @@
+#= require 'jquery.smooth-scroll'
+
 class Main
 
   body: $('body')
   window: $(window)
 
   constructor: ->
+    $('nav a').smoothScroll(offset: -60)
 
   setup: =>
 

@@ -1,5 +1,6 @@
 @require 'reset'
 @require 'helpers'
+@import 'nib'
 
 header-font = 'Roboto Condensed'
 text-font = 'Lekton'
@@ -11,22 +12,25 @@ html, body
 
 strong
   font-weight 700
+  color #555
 em
   font-style italic
+  color #555
 
 body
-  color #eee
+  color #777
   font-family text-font, sans-serif
-  background #111
+  background #eee
   line-height 1.6em
 
 h1, h2, h3, h4, h5
-  font-family header-font
+  //font-family header-font
+  font-weight bold
 
 a
-  color #fff
+  color #555
   font-weight 700
-  border-bottom 2px solid #fff
+  border-bottom 2px solid @color
   text-decoration none
 
 p
@@ -35,27 +39,51 @@ p
 ul
   list-style initial
 
-hr
-  border 0
-  color #fff
-  background #fff
-  height 2px
+nav
+  text-align center
+  padding 20px 0 40px
+  background linear-gradient(top, rgba(#eee, 1), rgba(#eee, 0.7), rgba(#eee, 0))
+  position fixed
+  top 0
+  width 100%
+  a
+    display inline-block
+    border none
+    margin 0 20px
+
 
 .content
   width 768px
   max-width 100%
-  margin 40px auto
+  margin 80px auto
 
+
+.whois
+  p
+    margin 0
+  iframe
+    margin 10px 0
+  .person
+    width 50%
+    display inline-block
+    box-sizing border-box
+    padding 10px
+    vertical-align top
+    &:nth-child(odd)
+      text-align right
+
+
+.who
+  text-align center
+  margin 20px auto
+  a
+    display inline-block
+    padding 0.3em 1em
+    margin-left -2px
+    border 2px solid #777
 
 .images
   img
     width 50%
     display inline-block
     box-sizing border-box
-    border 0 solid #fff
-    -webkit-transition all ease-in-out 0.3s
-    transition all ease-in-out 0.3s
-  img:hover
-    -webkit-transform scale(1.2) rotate(-3deg)
-    transform scale(1.2) rotate(-3deg)
-    border 2px solid #fff
