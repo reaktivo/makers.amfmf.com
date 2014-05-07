@@ -1,0 +1,131 @@
+extends layout
+
+block content
+
+  nav
+    a(href="#que") ¿Qué?
+    a(href="#quienes") ¿Quiénes?
+    a(href="#cuando") ¿Cúando?
+    a(href="#aplicar") Aplicar
+    a(href="/en") English
+
+  #support.content
+    p Con el apoyo de:
+    img(src="/img/artealameda.png")
+
+  #que
+    .content
+      :markdown
+        ![Photo por Rockajoint](/img/mmhl01.jpg)
+        Dentro del marco de la quinta edición del festival de música *All My Friends*, **MusicMakers Hacklab Tijuana**
+        abre su espacio a la comunidad local dedicada al desarrollo de nuevas tecnologías en dispositivos musicales para
+        compartir ideas y explorar juntos nuevas posibilidades de generar y controlar sonido electrónico.
+        ![Photo por Rockajoint](/img/mmhl02.jpg)
+        **MusicMakers Hacklab**, el evento colaborativo diseñado por Peter Kirn [http://createdigitalmusic.com](createdigitalmusic.com)
+        dentro del festival [DISK CTM](www.ctm-festival.de) de Berlín, extiende una línea de diálogo hacia
+        la comunidad creativa del norte del país con el fin de encontrar nuevas formas de creación y expresión musical.
+
+
+  #quienes
+    .whois.content
+      .person
+        :markdown
+          ## Leslie García
+          [lessnullvoid.cc](http://lessnullvoid.cc)
+          <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/146828974&amp;color=cccccc&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+
+          Leslie García trabaja desarrollando proyectos de arte electrónico y
+          medios digitales. Su trabajo explora el proceso de fusión entre el arte
+          y tecnología, utilizando técnicas como la producción de herramientas
+          virtuales, desarrollo de prototipos electrónicos, producción de audio,
+          diseño de piezas de net.art y códigos visuales generativos. Es
+          co-fundadora del colectivo de medios electrónicos DreamAddictive
+          (Tijuana 2003-2010) y Astrovandalistas (Ciudad de México 2010). Es
+          investigadora asociada delNucleo Laboratorial Nano de la Escola de
+          Belas Artes – UFRJ, en Río de Janeiro. Su trabajo ha formado parte de
+          festivales y muestras colectivas e individuales en espacios como Media
+          Lab Prado, Museo de Arte Reina Sofía, O1SJ, Museum of Latin American
+          Arts, Piksel Festival, Ars Electrónica en México, Centro Cultural de
+          España, Public Art Lab de Berlin, NOMAD Center for media research,
+          Museum of Contemporary Art in Szczecin, Transitio_mx, LabSurLab2,
+          Hip3rorganicos, Nuvem estación de arte y tecnología, ISEA2013, Mutek_mx,
+          Transmediale 2014, CTM, entre otros.
+
+
+
+      .person
+        :markdown
+          ## Michael Trigilio
+          [starve.org/mtprojects.html](http://www.starve.org/mtprojects.html)
+          <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/96895359&amp;color=cccccc&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+
+          Michael Trigilio es un artista multimedia que reside en San Diego. Su
+          trabajo en cine, sonido, performance, y media táctica han sido
+          presentados en lugares como el Museum of Contemporary Art de San Diego,
+          el LA County Museum of Art (LACMA), el Contemporary Museum de Baltimore,
+          Anthology Film Archives en New York, Southern Exposure en San Francisco
+          y en el San Francisco's Dancers' Group. Su proyecto de medios públicos
+          Neighborhood Public Radio (NPR) en colaboración con los artistas Lee
+          Montgomery y Jon Brumit fue incluido en la Whitney Biennale de 2008 y
+          obtuvo una residencia en el Headlands Center for the Arts en 2007 y en
+          el Museum of Contemporary Art (MOCA) de Los Angeles en 2011. Sus
+          proyectos colaborativos más recientes incluyen: Project Planetaria, con
+          el astrofísico Adam Burgasser y la artista Tara Knight, enfocados en
+          interpretar información estelar a través del performance, sonido y
+          media. Actualmente desarrolla un proyecto multimedia llamado T2ERU que
+          utiliza tecnología de vanguardia en visualización para examinar la
+          memoria como material contra cultural especulativo. Michael es
+          catedrático del departamento de Artes Visuales de UC San Diego donde
+          enseña Sonido y Artes Mediales.
+
+
+  #cuando.content
+    :markdown
+      **MMHL_TJ** es un laboratorio de 3 días facilitado por [Michael Trigilio](http://visarts.ucsd.edu/faculty/michael-trigilio)
+      y [Leslie García](http://lessnullvoid.cc), dirigido a desarrolladores de hardware/software, makers, músicos, compositores,
+      diseñadores interactivos, artistas, o cualquier interesado en los procesos de creación *DIWO* de la música electrónica,
+      dentro del cual se busca desarrollar sistemas standalone para generar sonido electrónico como:
+
+      - Theremines
+      - Secuenciadores de pasos de 8 y 16 bits - Consolas Atari punk
+      - Sintetizadores de modelado analógico
+      - Generadores de tonos y de efectos
+
+      Y su interacción con dispositivos como: interfaces ópticas, biológicas y mecánicas.
+
+      ![Photo por Rockajoint](/img/mmhl03.jpg)
+      El resultado de los proyectos serán presentados en sesiones de actos en vivo dentro de un espacio del festival AMF,
+      en donde además el público podrá interactuar con los dispositivos que se desarrollen durante los talleres.
+
+  #aplicar.content
+    :markdown
+      ![Photo por Rockajoint](/img/mmhl04.jpg)
+
+      Interesados enviar un email [mmhl@amfmf.com](mailto:mmhl@amfmf.com) respondiendo a las siguientes preguntas:
+
+      - ¿Qué habilidades puedes compartir?
+      - ¿Cuáles son tus intereses?
+      - ¿Con qué tipo de personas te gustaría colaborar?
+      - ¿Porqué te quieres involucrar en el laboratorio?
+
+      Adjunta un pequeño texto contándonos acerca de ti (150 palabras)
+
+      **Cupo**: 8 personas<br>
+      **Fecha**: 11, 12 y 13 de junio<br>
+      **Horario**: 11 a 20 horas (sesiones distribuidas de talleres, tinkering, prototipado y jams colectivos)<br>
+      **Lugar**: Tj in China project room (Av. Revolución No. 1332, Zona Centro, Tijuana, BC, mx (entre 6ta Y 7ma)<br>
+
+      \* Los participantes que residan fuera de la ciudad de Tijuana tendrán que hacerse cargo de su hospedaje y transportación.
+
+  #map
+  .content
+    :markdown
+      **MMHL_TJ** también tiene un programa de actividades abiertas al público que incluyen conferencias, micro-talleres y
+      un showcase de proyectos de la región enfocados en la experimentación musical llamado Sesión de máquinas.
+
+  footer.content
+    :markdown
+      Fotos por: [Rockajoint](http://www.rockajoint.com/)
+    img(src="/img/rockajoint.png")
+    img(src="/img/tjinchina.png")
+    img(src="/img/noema.png")

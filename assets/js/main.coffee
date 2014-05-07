@@ -1,4 +1,6 @@
 #= require 'jquery.smooth-scroll'
+#= require 'markedmap'
+#= require 'mapstyles'
 
 class Main
 
@@ -7,8 +9,11 @@ class Main
 
   constructor: ->
     $('nav a').smoothScroll(offset: -60)
-
-  setup: =>
+    @map = new MarkedMap
+      el: $('#map')[0]
+      latlng: [32.530236, -117.036371]
+      icon: "http://makers.amfmf.com/img/pin.png"
+      styles: window.MAP_STYLES
 
   viewport: ->
     if typeof window.innerWidth is 'undefined'
