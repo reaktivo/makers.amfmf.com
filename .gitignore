@@ -2,3 +2,5 @@ flightplan.*
 node_modules
 public/video
 public/media
+builtAssets
+
